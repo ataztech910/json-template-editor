@@ -13,10 +13,13 @@
   <body>
     <div class="container">
         <h2>JSON change form</h2>
-        <form action="submit" method="post">
+
+        <p><%= SyncResponse.status %></p>
+
+        <form action="/" method="post">
             <div class="form-group">
                <label for="exampleInputEmail1">Status</label>
-               <input type="text" class="form-control" id="statusText1" name="status" aria-describedby="statusText">
+               <input type="text" class="form-control" id="statusText1" name="status" value="<%= SyncResponse.status %>" aria-describedby="statusText">
                <small id="statusText" class="form-text text-muted">Just change yoiur data motherfucker.</small>
             </div>
             
